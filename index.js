@@ -1,16 +1,13 @@
-function writeCards(names, occasion) {
-    const newArray = []
-    for (let i = 0; i < names.length; i++) {
-        newArray.push(`Thank you, ${names[i]}, for the wonderful ${occasion} gift!`)
-        debugger;
+function writeCards(name, occasion) {
+    let message = [];
+    for (let i = 0; i < name.length; i++) {
+        message.push(`Thank you, ${name[i]}, for the wonderful ${occasion} gift!`)
     }
-    return newArray;
+    return message;
 }
 
-writeCards(names)
-function countDown(number) {
-    let n = number
-    while (n >= 0)
-        console.log(n--);
+function countDown(num) {
+    for (let i = 0; i <= num; i++) {
+        console.log(num - i)
+    }
 }
-countDown(3)
